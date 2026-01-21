@@ -16,6 +16,11 @@ import { AsmCustomer360FeatureModule } from './features/asm/asm-customer360-feat
 import { SmartEditFeatureModule } from './features/smartedit/smart-edit-feature.module';
 import { ProductVariantsFeatureModule } from './features/product/product-variants-feature.module';
 import { ProductImageZoomFeatureModule } from './features/product/product-image-zoom-feature.module';
+import { OrganizationAdministrationFeatureModule } from './features/organization/organization-administration-feature.module';
+import { OrganizationOrderApprovalFeatureModule } from './features/organization/organization-order-approval-feature.module';
+import { OrganizationAccountSummaryFeatureModule } from './features/organization/organization-account-summary-feature.module';
+import { OrganizationUserRegistrationFeatureModule } from './features/organization/organization-user-registration-feature.module';
+import { OrganizationUnitOrderFeatureModule } from './features/organization/organization-unit-order-feature.module';
 
 @NgModule({
   declarations: [],
@@ -83,7 +88,12 @@ import { ProductImageZoomFeatureModule } from './features/product/product-image-
     AsmCustomer360FeatureModule,
     SmartEditFeatureModule,
     ProductVariantsFeatureModule,
-    ProductImageZoomFeatureModule
+    ProductImageZoomFeatureModule,
+    OrganizationAdministrationFeatureModule,
+    OrganizationOrderApprovalFeatureModule,
+    OrganizationAccountSummaryFeatureModule,
+    OrganizationUserRegistrationFeatureModule,
+    OrganizationUnitOrderFeatureModule
   ],
   providers: [provideFeatureToggles({
     "showDeliveryOptionsTranslation": true,
