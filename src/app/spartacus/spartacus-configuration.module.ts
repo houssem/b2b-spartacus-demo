@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { translationChunksConfig, translationsEn } from "@spartacus/assets";
 import { FeaturesConfig, I18nConfig, OccConfig, provideConfig, SiteContextConfig } from "@spartacus/core";
+import { defaultB2bOccConfig } from "@spartacus/setup";
 import { defaultCmsContentProviders, layoutConfig, mediaConfig } from "@spartacus/storefront";
 
 @NgModule({
@@ -16,7 +17,7 @@ import { defaultCmsContentProviders, layoutConfig, mediaConfig } from "@spartacu
   }), provideConfig(<SiteContextConfig>{
     context: {
       urlParameters: ['baseSite', 'language', 'currency'],
-      baseSite: ['powertools-spa','electronics-spa'],
+      baseSite: ['powertools-spa', 'electronics-spa'],
       currency: ['USD', 'GBP']
     },
   }), provideConfig(<I18nConfig>{
@@ -29,6 +30,6 @@ import { defaultCmsContentProviders, layoutConfig, mediaConfig } from "@spartacu
     features: {
       level: '2211.37'
     }
-  })]
+  }), provideConfig(defaultB2bOccConfig)]
 })
 export class SpartacusConfigurationModule { }
