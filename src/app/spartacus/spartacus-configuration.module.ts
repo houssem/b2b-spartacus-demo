@@ -30,6 +30,8 @@ import { defaultCmsContentProviders, layoutConfig, mediaConfig } from "@spartacu
     features: {
       level: '2211.37'
     }
-  }), provideConfig(defaultB2bOccConfig)]
+  }), provideConfig(defaultB2bOccConfig), provideConfig(<SiteContextConfig>{
+    context: {},
+  })]
 })
 export class SpartacusConfigurationModule { }
