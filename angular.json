@@ -140,7 +140,12 @@
             "stylePreprocessorOptions": {
               "includePaths": [
                 "node_modules/"
-              ]
+              ],
+              "sass": {
+                "silenceDeprecations": [
+                  "import"
+                ]
+              }
             }
           }
         }
